@@ -1,0 +1,45 @@
+
+body {
+	background-color:#b8b5b5;
+}
+header, section, footer {
+  max-width:800px;
+  min-height: 100%;
+	background-color: #FFFFFF;
+	margin:auto;
+}
+
+header {
+	height:55.97px;
+}
+
+
+footer {
+	height:70px;
+	text-align:center;
+}
+
+.aviso {
+	padding:10px;
+	background-color:#FF0000;
+	border:2px solid #FFFFFF;
+	margin:10px;
+}
+.menu{
+  padding-bottom:10px;
+}
+
+.corpoView{
+  position:relative;
+  top:1px;
+  left:2px;  
+  padding-bottom: 4px;
+
+}
+.centralizar-texto{
+  text-align:center;
+}
+
+.btn-remover{
+  font-size: 7px;
+}
