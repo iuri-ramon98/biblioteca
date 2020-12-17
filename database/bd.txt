@@ -1,0 +1,40 @@
+-- SEQUENCE: public.livros_id_seq
+
+-- DROP SEQUENCE public.livros_id_seq;
+
+CREATE SEQUENCE public.livros_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1;
+
+ALTER SEQUENCE public.livros_id_seq
+    OWNER TO postgres;
+
+
+
+
+-- Table: public.livros
+
+-- DROP TABLE public.livros;
+
+CREATE TABLE public.livros
+(
+    id integer NOT NULL DEFAULT nextval('livros_id_seq'::regclass),
+    nome character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    ano_edicao character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    ano_publicacao character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    autor character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    editora character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    estoque_total integer NOT NULL,
+    estoque_disponivel integer NOT NULL,
+    created_at timestamp(0) without time zone,
+    updated_at timestamp(0) without time zone,
+    CONSTRAINT clientes_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.livros
+    OWNER to postgres;

@@ -25,6 +25,9 @@ Vue.component('painel', require('./components/Painel.vue').default);
 Vue.component('btn-painel', require('./components/BtnPainel.vue').default);
 Vue.component('card-lista', require('./components/CardLista.vue').default);
 Vue.component('card-form', require('./components/CardForm.vue').default);
+Vue.component('modal', require('./components/modal/Modal.vue').default);
+Vue.component('modal-btn', require('./components/modal/ModalBtn.vue').default);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
